@@ -1,0 +1,4 @@
+.each-book-list-item{
+    display: flex;
+    justify-content: space-around;
+}

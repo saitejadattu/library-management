@@ -1,0 +1,29 @@
+.login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form-container{
+    width: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.login-button{
+    align-self: center;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    width: 100px;
+}
+.log-text{
+    align-self: flex-end;
+}

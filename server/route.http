@@ -1,0 +1,46 @@
+GET http://localhost:5000/api/
+
+###
+POST http://localhost:5000/api/register
+Content-Type: application/json 
+
+{
+    "email": "teja3@gmail.com",
+    "password": "teja"
+}
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json 
+
+{
+    "email": "teja2@gmail.com",
+    "password": "teja"
+}
+###
+GET http://localhost:5000/api/books
+
+###
+POST http://localhost:5000/api/borrow_request/11f3d4c7-b4cc-4ac3-9da1-b6b639e5b62c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlamEyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWQiOiJhOTQzNWVhZC04NDFlLTRiOGItODE0Zi1jMzg3NjUxZTIyMDAiLCJpYXQiOjE3MzM3NDA5ODN9.GxEp54Ebci7BJfk5QzYjKPMPcLD5dxGJu1r6yu_zjh4
+Content-Type: application/json 
+
+{
+    "start_date": "2024-11-12",
+    "end_date": "2024-12-12"
+}
+###
+GET http://localhost:5000/api/borrow_requests
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpYnJhcnlAZ21haWwuY29tIiwicm9sZSI6ImxpYnJhcmlhbiIsImlkIjoiNDEwOTBjN2UtMTg1My00YzMxLTgxODEtNDRhNDU4MjYwYjUwIiwiaWF0IjoxNzMzNjc0MDgzfQ.lJ-EwG90yst75nXljXp_eECmjI-98d-mJYneE2mjL1c
+###
+PUT http://localhost:5000/api/borrow_requests/6273a613-1cd8-466c-b754-bbd17edaf9b7/approve
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpYnJhcnlAZ21haWwuY29tIiwicm9sZSI6ImxpYnJhcmlhbiIsImlkIjoiNDEwOTBjN2UtMTg1My00YzMxLTgxODEtNDRhNDU4MjYwYjUwIiwiaWF0IjoxNzMzNjc0MDgzfQ.lJ-EwG90yst75nXljXp_eECmjI-98d-mJYneE2mjL1c
+
+###
+PUT http://localhost:5000/api/borrow_requests/8f0467f2-5573-40f0-92e6-95302b9b9f80/deny
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpYnJhcnlAZ21haWwuY29tIiwicm9sZSI6ImxpYnJhcmlhbiIsImlkIjoiNDEwOTBjN2UtMTg1My00YzMxLTgxODEtNDRhNDU4MjYwYjUwIiwiaWF0IjoxNzMzNjc0MDgzfQ.lJ-EwG90yst75nXljXp_eECmjI-98d-mJYneE2mjL1c
+
+###
+GET http://localhost:5000/api/users/6417ecf6-5108-4c39-8ea8-c149222c06a1/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlamExQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWQiOiI2NDE3ZWNmNi01MTA4LTRjMzktOGVhOC1jMTQ5MjIyYzA2YTEiLCJpYXQiOjE3MzM3MzIyOTF9.U7hWZHZxrWFTDz2nl1bh1uAd7O3Q93BlKzEcOF_Rj_Y
+
+###
